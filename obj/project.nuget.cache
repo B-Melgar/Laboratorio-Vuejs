@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+AFylj+LsABHW7+JLhxL171m1NwjToeyH/3LZ7jLXGmbDXEc3iWNY0RbUpZ7JOjPU8qOAxdMwlMyPUKFm++BLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\melga\\OneDrive\\Escritorio\\EJERCICIOS\\laboratorio\\laboratorio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\melga\\.nuget\\packages\\vue.js\\1.0.22\\vue.js.1.0.22.nupkg.sha512",
+    "C:\\Users\\melga\\.nuget\\packages\\vue.js.developers.version\\2.4.2\\vue.js.developers.version.2.4.2.nupkg.sha512"
+  ],
+  "logs": []
+}

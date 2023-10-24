@@ -1,0 +1,78 @@
+﻿@model List<ListaCompra>
+
+<div id="app">
+    <ul>
+        <li v-for="compra in compras">
+            {{ compra.Nombre }} - {{ compra.Cantidad }} - Realizado: {{ compra.Realizado ? 'Sí' : 'No' }}
+            <button @click="editarCompra(compra)">Editar</button>
+            <button @click="eliminarCompra(compra.Id)">Eliminar</button>
+        </li>
+    </ul>
+    <form @submit.prevent="crearCompra">
+        <input v-model="nuevaCompra.Nombre" placeholder="Nombre">
+        <input v-model="nuevaCompra.Cantidad" placeholder="Cantidad">
+        <input type="checkbox" v-model="nuevaCompra.Realizado"> Realizado
+        <button type="submit">Agregar</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            compras: @Html.Raw(Json.Serialize(Model)),
+            nuevaCompra: {
+                Nombre: '',
+                Cantidad: 0,
+                Realizado: false
+            }
+        },
+        methods: {
+            crearCompra: function () {
+
+                fetch('/ListaCompra/Crear', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(this.nuevaCompra)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Actualiza la lista de compras con la nueva compra creada
+                        this.compras.push(data);
+                        this.nuevaCompra = {
+                            Nombre: '',
+                            Cantidad: 0,
+                            Realizado: false
+                        };
+                    });
+            },
+            editarCompra: function (compra) {
+
+                fetch(`/ListaCompra/Editar/${compra.Id}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(compra)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+
+                    });
+            },
+            eliminarCompra: function (compraId) {
+
+                fetch(`/ListaCompra/Eliminar/${compraId}`, {
+                    method: 'POST'
+                })
+                    .then(response => {
+                        // Elimina la compra de la lista de compras en el frontend
+                        this.compras = this.compras.filter(compra => compra.Id !== compraId);
+                    });
+            }
+        }
+    });
+</script>

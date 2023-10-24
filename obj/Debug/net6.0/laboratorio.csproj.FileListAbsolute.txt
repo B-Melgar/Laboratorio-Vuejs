@@ -1,0 +1,7 @@
+C:\Users\melga\OneDrive\Escritorio\EJERCICIOS\laboratorio\obj\Debug\net6.0\laboratorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\melga\OneDrive\Escritorio\EJERCICIOS\laboratorio\obj\Debug\net6.0\laboratorio.AssemblyInfoInputs.cache
+C:\Users\melga\OneDrive\Escritorio\EJERCICIOS\laboratorio\obj\Debug\net6.0\laboratorio.AssemblyInfo.cs
+C:\Users\melga\OneDrive\Escritorio\EJERCICIOS\laboratorio\obj\Debug\net6.0\laboratorio.csproj.CoreCompileInputs.cache
+C:\Users\melga\OneDrive\Escritorio\EJERCICIOS\laboratorio\obj\Debug\net6.0\laboratorio.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\melga\OneDrive\Escritorio\EJERCICIOS\laboratorio\obj\Debug\net6.0\laboratorio.RazorAssemblyInfo.cache
+C:\Users\melga\OneDrive\Escritorio\EJERCICIOS\laboratorio\obj\Debug\net6.0\laboratorio.RazorAssemblyInfo.cs

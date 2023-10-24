@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "vue.js/1.0.22": {
+        "type": "package"
+      },
+      "Vue.js.Developers.Version/2.4.2": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "vue.js/1.0.22": {
+      "sha512": "8R5L3J2E9UwnpVy6FsnP8Y2IOOVynotgV4wQZBZQMksTxD3wwBcfIS4Bk+maDFNDGfNVkqPdlLjARfBffTHhJA==",
+      "type": "package",
+      "path": "vue.js/1.0.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/vue.js",
+        "Content/Scripts/vue.min.js",
+        "vue.js.1.0.22.nupkg.sha512",
+        "vue.js.nuspec"
+      ]
+    },
+    "Vue.js.Developers.Version/2.4.2": {
+      "sha512": "42nTflt6FjzN/NKnS2AFruSiGnM9ST1yRgRLN/Ztugyb8iWTnQPgTNgBQRjqA/O1gEhoVUFqqM9jykB67KK6Kw==",
+      "type": "package",
+      "path": "vue.js.developers.version/2.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Scripts/vue.js",
+        "vue.js.developers.version.2.4.2.nupkg.sha512",
+        "vue.js.developers.version.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Vue.js.Developers.Version >= 2.4.2",
+      "vue.js >= 1.0.22"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\melga\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\melga\\OneDrive\\Escritorio\\EJERCICIOS\\laboratorio\\laboratorio.csproj",
+      "projectName": "laboratorio",
+      "projectPath": "C:\\Users\\melga\\OneDrive\\Escritorio\\EJERCICIOS\\laboratorio\\laboratorio.csproj",
+      "packagesPath": "C:\\Users\\melga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\melga\\OneDrive\\Escritorio\\EJERCICIOS\\laboratorio\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\melga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Vue.js.Developers.Version": {
+            "target": "Package",
+            "version": "[2.4.2, )"
+          },
+          "vue.js": {
+            "target": "Package",
+            "version": "[1.0.22, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
